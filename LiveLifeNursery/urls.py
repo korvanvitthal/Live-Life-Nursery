@@ -31,6 +31,7 @@ urlpatterns = [
     path('',views.home,name='home'),
     path('nursery/',views.nursery,name='nursery'),
     path('gallery/',views.gallery,name='gallery'),
+    path('accounts/', include('accounts.urls')),
     path('store/', include('store.urls')),
     path('cart/', include('carts.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
