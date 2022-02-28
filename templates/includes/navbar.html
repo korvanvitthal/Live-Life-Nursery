@@ -8,17 +8,15 @@
       <div class="collapse navbar-collapse" id="navbarTop4">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item dropdown">
-                 <a href="{% url 'gallery' %}" class="nav-link"> Gallery </a>
-                
-            </li>
+                <a href="{% url 'gallery' %}" class="nav-link"><i class="fa fa-image"></i> Gallery </a>      
+           </li>
             <li class="nav-item dropdown">
-                <a href="{% url 'nursery' %}" class="nav-link"> Nursery </a>
+                <a href="{% url 'nursery' %}" class="nav-link"><i class="fa fa-leaf"></i>  Nursery </a>
             </li>
         </ul>
-        <ul class="navbar-nav">
-            <li><a href="#" class="nav-link"> <i class="fa fa-envelope"></i> Email </a></li>
-            <li><a href="#" class="nav-link"> <i class="fa fa-phone"></i> Call us </a></li>
-        </ul> <!-- list-inline //  -->
+        {% comment %} <ul class="navbar-nav">
+            
+        </ul> <!-- list-inline //  --> {% endcomment %}
       </div> <!-- navbar-collapse .// -->
     </div> <!-- container //  -->
     </nav>
