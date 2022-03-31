@@ -15,7 +15,7 @@ def home(request):
     }
     return render(request, 'home.html', context)
 
-
+ 
 def nursery(request):
     return render(request,'nursery.html')
 
